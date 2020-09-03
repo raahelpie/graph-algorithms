@@ -1,5 +1,5 @@
-###Modified BFS for unweighted graphs
-
+Modified BFS for unweighted graphs
+--
 Algorithm:
   - Maintain a distances array where the distance to every node is -1. Mark the distance to the source node to be 0.
   - Maintain a queue same as you would in normal BFS. Add the first source node to the queue.
@@ -11,8 +11,8 @@ Algorithm:
  
 
 
-###Dijkstra's Shortest Path Algorithm For Weighted Graphs
-
+Dijkstra's Shortest Path Algorithm For Weighted Graphs
+--
 Algorithm:
   - Maintain a distances array where the distance to every node is positive infinity. Mark the distance to the source node to be 0.
   - Maintain a PriorityQueue of key-value pairs of (distance, node) pairs which tell you which node to visit next based on sorted minimum values.
