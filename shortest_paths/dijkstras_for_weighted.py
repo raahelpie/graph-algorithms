@@ -70,7 +70,7 @@ distances[source] = 0                                       # shortest distance 
 
 q = PriorityQueue()                                         # Consider a priority queue which sorts on basis of dists
 q.put((distances[source], source))                          # hence, put in format of (distance, node)
-processed = set()                                             # to avoid visiting same node twice
+processed = set()                                           # to avoid visiting same node twice
 prev = [None for i in range(n+1)]
 while q.qsize():                                            # while the queue is not empty
     currentDistance, node = q.get()                         # take the currentDist and node out (pop)

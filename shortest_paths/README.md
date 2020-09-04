@@ -9,8 +9,19 @@ Algorithm:
   - After the queue become empty, the distances array will have the shortest distances, if the value is -1, then that node cannot be visited from the selected source node.
   
  
+General Structure for Shortest Path Algorithms
+--
 
-
+1. Initialisation:
+    1. Initialize all distances to all the vertices as infinity
+    2. Mark the previous node of all vertices as None
+    3. Make the shortest distance to source as 0
+   
+2. Run a loop for edge (source, vertex) (somehow) until all edges are relaxed
+3. Relax the vertices: \
+    if d[v] > d[u] + edge_weight(u, v): d[v] = d[u] + edge_weight(u, v) and previous node of v is u
+    
+    
 Dijkstra's Shortest Path Algorithm For Weighted Graphs
 --
 Algorithm:
