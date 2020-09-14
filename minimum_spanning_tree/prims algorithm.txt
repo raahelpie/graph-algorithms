@@ -1,0 +1,4 @@
+asougfqpifn
+choose smallest
+relax edges
+do till all edges are procesed
